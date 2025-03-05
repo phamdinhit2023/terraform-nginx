@@ -1,0 +1,8 @@
+aws_vpc
+aws_internet_gateway
+aws_route_table
+aws_subnet
+aws_route_table_association
+aws_sercurity_group
+aws_instance_ec2
+aws_eip

@@ -9,7 +9,7 @@ terraform {
       source  = "hashicorp/aws"
     }
   }
-  backend "s3" {}
+  # backend "s3" {}
 }
 
 module "custom-vpc" {
@@ -21,8 +21,8 @@ module "custom-vpc" {
   vpc_cidr_block = var.vpc_cidr_block
 
   first_private_subnet_cidr  = var.first_private_subnet_cidr
-  second_private_subnet_cidr = var.second_private_subnet_cidr
+  # second_private_subnet_cidr = var.second_private_subnet_cidr
 
   first_public_subnet_cidr  = var.first_public_subnet_cidr
-  second_public_subnet_cidr = var.second_public_subnet_cidr
+  # second_public_subnet_cidr = var.second_public_subnet_cidr
 }
